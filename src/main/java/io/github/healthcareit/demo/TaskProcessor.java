@@ -21,8 +21,10 @@ public class TaskProcessor {
 	public void publishRequest(String payload) {
 
 		//maven://[groupid]:[artifactid]:jar:[version]
+		//or
+		//http(s)://[jar Url]
 
-		String url = "maven://io.github.healthcareit:springcloud-m3-task:jar:0.0.1";
+		String url = "https://github.com/Healthcare-IT/springcloud-m3-task/releases/download/0.0.1/springcloud-m3-task-0.0.1.jar";
 
 		List<String> input = new ArrayList<String>(Arrays.asList(payload.split(",")));
 
